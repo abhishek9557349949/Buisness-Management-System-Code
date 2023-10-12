@@ -17,11 +17,16 @@ eyeIcon.addEventListener("click", () => {
   })
   
 })
-})      
+});
 
 links.forEach(link => {
 link.addEventListener("click", e => {
  e.preventDefault(); //preventing form submit
  forms.classList.toggle("show-signup");
 })
-})
+});
+
+const loginButton = document.getElementById('loginButton');
+loginButton.addEventListener('click', function() {window.location.href = 'src/homePage.html';
+alert("I am an alert box!");
+console.log(window.location.href);})
